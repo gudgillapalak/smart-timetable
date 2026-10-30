@@ -1,0 +1,19 @@
+{
+  "name": "smart-timetable-server",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "db:init": "node src/initDb.js",
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test:scheduler": "node src/scheduler/selftest.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^5.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.0"
+  }
+}
